@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Matthias De Gisi</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,43 +17,116 @@
     />
   </head>
   <body>
+    <!--Header-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <svg class="bi" width="30" height="24" fill="currentColor">
+            <use
+              xlink:href="assets/icons/bootstrap-icons-1.11.2/bootstrap-icons.svg#music-note-beamed"
+            ></use>
+          </svg>
+          Matthias De Gisi</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Main Content-->
     <div class="container">
-      <header
-        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom"
-      >
-        <div class="col-md-3 mb-2 mb-md-0">
-          <a
-            href="/"
-            class="d-inline-flex link-body-emphasis text-decoration-none"
-          >
-            <svg
-              class="bi"
-              width="40"
-              height="32"
-              role="img"
-              aria-label="Bootstrap"
-            >
-              <use
-                xlink:href="assets/icons/bootstrap-icons-1.11.2/bootstrap-icons.svg#bootstrap"
-              ></use>
-            </svg>
-          </a>
-        </div>
-        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
-          <li><a href="#" class="nav-link px-2">Features</a></li>
-          <li><a href="#" class="nav-link px-2">Pricing</a></li>
-          <li><a href="#" class="nav-link px-2">FAQs</a></li>
-          <li><a href="#" class="nav-link px-2">About</a></li>
-        </ul>
-        <div class="col-md-3 text-end">
-          <button type="button" class="btn btn-outline-primary me-2">
-            Login
-          </button>
-          <button type="button" class="btn btn-primary">Sign-up</button>
-        </div>
-      </header>
+      <img
+        class="w-25 img-fluid rounded-circle my-2 me-5 float-end"
+        src="assets/img/md-main-image.JPG"
+        alt="a man smiling at the camera."
+      />
+      <h1>Hello, I'm Matthias De Gisi.</h1>
+      <p>
+        Welcome to my little corner of the web! 👋 I'm a student currently
+        rocking the ITAS-SAND diploma, specializing in the cool realms of
+        networking and system administration. But hey, that's not all I'm about!
+      </p>
+      <h2>What I'm Into:</h2>
+      <ul class="list-group-flush">
+        <li class="list-group-item m-2">
+          🌐 Networking and Coding: Building digital bridges and crafting code
+          that makes things happen. Nerdy? Maybe. Fun? Absolutely!
+        </li>
+        <li class="list-group-item m-2">
+          🚀 Web Development: Turning ideas into websites that not only work but
+          look darn good doing it. Because who said tech can't be stylish?
+        </li>
+        <li class="list-group-item m-2">
+          🎵 Music Production: When I'm not tinkering with tech, you might catch
+          me lost in the world of music production. Beats, melodies, and all
+          that good stuff.
+        </li>
+        <li class="list-group-item m-2">
+          🎮 Games: A bit of a gamer, I must admit. Whether it's slaying dragons
+          or building virtual empires, count me in for the fun.
+        </li>
+      </ul>
+      <h2>Cool Stuff I've Done:</h2>
+      <ul class="list-group-flush">
+        <li class="list-group-item m-2">
+          🔧 Networking Wizardry: Made networks do magical things. Improved
+          stuff, fixed things, and maybe broke a few to learn how they tick.
+        </li>
+        <li class="list-group-item m-2">
+          💻 Coding Adventures: Cooked up some code that actually works. Web
+          development projects that are as functional as they are good-looking.
+        </li>
+        <li class="list-group-item m-2">
+          🎧 Musical Journeys: Created tunes that I hope make your head nod.
+          Music is my escape, and I'm always down to share the vibes.
+        </li>
+        <li class="list-group-item m-2">
+          🕹️ Gaming Quests: Explored virtual worlds and maybe saved them a few
+          times. Because why not be the hero in your own story?
+        </li>
+      </ul>
+      <h2>Why You Might Dig What I Do:</h2>
+      <ul class="list-group-flush">
+        <li class="list-group-item m-2">
+          Chill Vibes: I bring a laid-back yet passionate approach to everything
+          I do. Tech doesn't have to be all serious, right?
+        </li>
+        <li class="list-group-item m-2">
+          Team Player: Collaboration is my jam. Let's join forces and create
+          something awesome together!
+        </li>
+        <li class="list-group-item m-2">
+          Caffeine Addict: Okay, maybe not a professional skill, but hey, it
+          keeps me going!
+        </li>
+      </ul>
+      <h2>Let's Chat:</h2>
+      <p>
+        If you're into tech, music, gaming, or just want to swap cool ideas, hit
+        me up! I'm always down for a good conversation. Thanks for dropping by!
+        Let's make the internet a cooler place, one line of code and funky beat
+        at a time. 🚀✨
+      </p>
     </div>
+    <!--Footer-->
     <div class="container">
       <footer
         class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
@@ -62,8 +136,10 @@
             href="/"
             class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
           >
-            <svg class="bi" width="30" height="24">
-              <use xlink:href="#bootstrap"></use>
+            <svg class="bi" width="30" height="24" fill="currentColor">
+              <use
+                xlink:href="assets/icons/bootstrap-icons-1.11.2/bootstrap-icons.svg#bootstrap"
+              ></use>
             </svg>
           </a>
           <span class="mb-3 mb-md-0 text-body-secondary"
@@ -74,20 +150,26 @@
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
           <li class="ms-3">
             <a class="text-body-secondary" href="#"
-              ><svg class="bi" width="24" height="24">
-                <use xlink:href="assets/icons/bootstrap-icons-1.11.2/bootstrap-icons.svg#twitter"></use></svg
+              ><svg class="bi" width="24" height="24" fill="currentColor">
+                <use
+                  xlink:href="assets/icons/bootstrap-icons-1.11.2/bootstrap-icons.svg#spotify"
+                ></use></svg
             ></a>
           </li>
           <li class="ms-3">
             <a class="text-body-secondary" href="#"
-              ><svg class="bi" width="24" height="24">
-                <use xlink:href="assets/icons/bootstrap-icons-1.11.2/bootstrap-icons.svg#instagram"></use></svg
+              ><svg class="bi" width="24" height="24" fill="currentColor">
+                <use
+                  xlink:href="assets/icons/bootstrap-icons-1.11.2/bootstrap-icons.svg#apple"
+                ></use></svg
             ></a>
           </li>
           <li class="ms-3">
             <a class="text-body-secondary" href="#"
-              ><svg class="bi" width="24" height="24">
-                <use xlink:href="assets/icons/bootstrap-icons-1.11.2/bootstrap-icons.svg#facebook"></use></svg
+              ><svg class="bi" width="24" height="24" fill="currentColor">
+                <use
+                  xlink:href="assets/icons/bootstrap-icons-1.11.2/bootstrap-icons.svg#github"
+                ></use></svg
             ></a>
           </li>
         </ul>
