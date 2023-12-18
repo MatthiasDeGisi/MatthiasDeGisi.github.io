@@ -1,6 +1,6 @@
 ---
 title: My First Post
-layout: default
+layout: blogpost
 ---
 
 Hi, my name is Matthias De Gisi and I am testing out jekyll on my site for the first time. This "post" is really just meant to exist for filler purposes, and won't contain much of anything really.
