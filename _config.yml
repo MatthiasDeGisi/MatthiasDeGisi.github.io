@@ -56,3 +56,4 @@ exclude:
 #   - vendor/ruby/
 # include: 
 # - blog
+#keep_files
