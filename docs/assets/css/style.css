@@ -25,3 +25,7 @@
     height: 100%;
   
 }
+
+.footer-fix {
+  min-height: 79vh;
+}
