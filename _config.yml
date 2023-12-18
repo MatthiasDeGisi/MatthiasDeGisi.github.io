@@ -43,7 +43,7 @@
 # their entries' file path in the `include:` list.
 #
 exclude:
-- /
+- /bootstrap-5.3.2
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
@@ -54,5 +54,5 @@ exclude:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-include: 
-- blog
+# include: 
+# - blog
