@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Matthias De Gisi</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
     <link href="/bootstrap-5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link
       rel="stylesheet"
@@ -17,7 +17,7 @@
         <a class="navbar-brand" href="index.html">
           <img
             class="me-2"
-            src="assets/icons/logowhite.svg"
+            src="/assets/icons/logowhite.svg"
             alt="logo"
             height="35"
             width="35" />
@@ -38,9 +38,7 @@
           id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
-              >
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="music.html">Music</a>
@@ -52,86 +50,69 @@
               <a class="nav-link" href="coolpeople.html">Cool People</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link active" aria-current="page" href="contact.html"
+                >Contact</a
+              >
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!--Main Content-->
-    <div class="container">
-      <img
-        class="w-25 img-fluid rounded-circle my-2 me-5 float-end"
-        src="assets/img/md-main-image.JPG"
-        alt="a man smiling at the camera." />
-      <h1>Hello, I'm Matthias De Gisi.</h1>
-      <p>
-        Welcome to my little corner of the web! 👋 Currently pursuing the
-        ITAS-SAND diploma at Vancouver Island University, I'm a student with a
-        focus on networking and system administration. But hey, that's not all
-        I'm about!
-      </p>
-      <h2>What I'm Into:</h2>
-      <ul class="list-group-flush">
-        <li class="list-group-item m-2">
-          🌐 Networking and Coding: Building digital bridges and crafting code
-          that makes things happen. Nerdy? Maybe. Fun? Absolutely!
-        </li>
-        <li class="list-group-item m-2">
-          🚀 Web Development: Turning ideas into websites that not only work but
-          look darn good doing it. Because who said tech can't be stylish?
-        </li>
-        <li class="list-group-item m-2">
-          🎵 Music Production: When I'm not messing around with tech, you might
-          catch me lost in the world of making music. Beats, melodies, and all
-          that good stuff.
-        </li>
-        <li class="list-group-item m-2">
-          🎮 Games: Honestly, I'm a little bit of a gamer. Whether it's slaying
-          dragons or building virtual empires, count me in for the fun.
-        </li>
-      </ul>
-      <h2>Cool Stuff I've Done:</h2>
-      <ul class="list-group-flush">
-        <li class="list-group-item m-2">
-          🔧 Networking Wizardry: Made networks do magical things. Improved
-          stuff, fixed things, and maybe broke a few to learn how they tick.
-        </li>
-        <li class="list-group-item m-2">
-          💻 Coding Adventures: Cooked up some code that actually works. Web
-          development projects that are as functional as they are good-looking.
-        </li>
-        <li class="list-group-item m-2">
-          🎧 Musical Journeys: Created tunes that I hope make your head nod.
-          Music is my escape, and I'm always down to share the vibes.
-        </li>
-        <li class="list-group-item m-2">
-          🕹️ Gaming Quests: Explored virtual worlds and maybe saved them a few
-          times. Because why not be the hero in your own story?
-        </li>
-      </ul>
-      <h2>Why You Might Dig What I Do:</h2>
-      <ul class="list-group-flush">
-        <li class="list-group-item m-2">
-          Chill Vibes: I bring a laid-back yet passionate approach to everything
-          I do. Tech doesn't have to be all serious, right?
-        </li>
-        <li class="list-group-item m-2">
-          Team Player: Collaboration is my jam. Let's join forces and create
-          something awesome together!
-        </li>
-        <li class="list-group-item m-2">
-          Caffeine Addict: Okay, maybe not a professional skill, but hey, it
-          keeps me going!
-        </li>
-      </ul>
-      <h2>Let's Chat:</h2>
-      <p>
-        If you're into tech, music, gaming, or just want to swap cool ideas, hit
-        me up! I'm always down for a good conversation. Thanks for dropping by!
-        Let's make the internet a cooler place, one line of code and chill beat
-        at a time. 🚀✨
-      </p>
+    <div class="container footer-fix">
+      <div class="row">
+        <h1 class="border-bottom pb-2">Contact</h1>
+        <div class="col-md-8 order-md-1 order-2 mt-2">
+          <form
+            action="https://getform.io/f/c9ae7d6e-8a42-428f-8714-14b223aa43cf"
+            method="POST">
+            <div class="form-floating">
+              <input
+                name="email"
+                type="email"
+                class="form-control"
+                id="form-email"
+                placeholder="name@example.com"
+                required />
+              <label for="form-email">Email address</label>
+            </div>
+            <div class="form-text mb-3">
+              I'll never share your email with anyone else.
+            </div>
+            <div class="form-floating mb-3">
+              <textarea
+                name="comments"
+                class="form-control"
+                placeholder="Leave a comment here"
+                id="form-comments"
+                style="height: 100px"
+                required></textarea>
+              <label for="form-comments">Comments</label>
+            </div>
+            <div class="form-check mb-3">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="form-confirm"
+                required />
+              <label class="form-check-label" for="form-confirm">
+                Confirm that your comments are ready to send out.
+              </label>
+            </div>
+            <button type="submit" class="btn btn-outline-primary">
+              Submit
+            </button>
+          </form>
+        </div>
+        <div class="col-md-4 order-md-2 order-1">
+          <p>
+            If you want to connect with me, be it to give suggestions, offer me
+            some free money, or even if you just want to say hi, please fill out
+            the form. I will not share your info with anyone (I promise).
+          </p>
+        </div>
+      </div>
     </div>
     <!--Footer-->
     <div class="container">
@@ -143,7 +124,7 @@
             class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
             <img
               class="me-2"
-              src="assets/icons/logogray.svg"
+              src="/assets/icons/logogray.svg"
               alt="logo"
               height="25"
               width="25" />
@@ -159,7 +140,7 @@
               href="https://music.apple.com/us/artist/matt-degrace/1512126281"
               ><svg class="bi" width="24" height="24" fill="currentColor">
                 <use
-                  xlink:href="assets/icons/bootstrap-icons-1.11.2/bootstrap-icons.svg#apple"></use>
+                  xlink:href="/assets/icons/bootstrap-icons-1.11.2/bootstrap-icons.svg#apple"></use>
               </svg>
             </a>
           </li>
@@ -169,7 +150,7 @@
               href="https://open.spotify.com/artist/31D68OsHC2HGgzpXGgLDjz?si=M_W_9-QaQEWNtOaTyZSLLQ"
               ><svg class="bi" width="24" height="24" fill="currentColor">
                 <use
-                  xlink:href="assets/icons/bootstrap-icons-1.11.2/bootstrap-icons.svg#spotify"></use>
+                  xlink:href="/assets/icons/bootstrap-icons-1.11.2/bootstrap-icons.svg#spotify"></use>
               </svg>
             </a>
           </li>
@@ -179,7 +160,7 @@
               href="https://www.youtube.com/@mattdegrace/featured">
               <svg class="bi" width="24" height="24" fill="currentColor">
                 <use
-                  xlink:href="assets/icons/bootstrap-icons-1.11.2/bootstrap-icons.svg#youtube"></use>
+                  xlink:href="/assets/icons/bootstrap-icons-1.11.2/bootstrap-icons.svg#youtube"></use>
               </svg>
             </a>
           </li>
@@ -189,7 +170,7 @@
               href="https://github.com/MatthiasDeGisi">
               <svg class="bi" width="24" height="24" fill="currentColor">
                 <use
-                  xlink:href="assets/icons/bootstrap-icons-1.11.2/bootstrap-icons.svg#github"></use>
+                  xlink:href="/assets/icons/bootstrap-icons-1.11.2/bootstrap-icons.svg#github"></use>
               </svg>
             </a>
           </li>
