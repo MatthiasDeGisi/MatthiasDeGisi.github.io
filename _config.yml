@@ -55,6 +55,6 @@ exclude:
 #   - vendor/gems/
 #   - vendor/ruby/
 # include: 
-# - blog
+- /bootstrap-5.3.2/dist
 # keep_files: 
 # - /bootstrap-5.3.2
