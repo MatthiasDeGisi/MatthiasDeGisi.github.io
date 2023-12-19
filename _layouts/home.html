@@ -13,6 +13,13 @@ layout: default
     >
     <span class="postDate">{{ post.date | date: "%b %-d, %Y" }}</span>
     {{ post.excerpt }}
+    <p class="text-end">
+      <a
+        class="link-underline link-underline-opacity-0 link-underline-opacity-75-hover link-light"
+        href="{{ post.url }}"
+        ><i>Read more...</i>
+      </a>
+    </p>
   </li>
   {% endfor %}
 </ul>
