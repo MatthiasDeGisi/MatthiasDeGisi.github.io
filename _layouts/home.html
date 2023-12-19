@@ -4,9 +4,11 @@ layout: default
 
 {{ content }}
 <ul class="myposts list-group list-group-flush">
-{% for post in site.posts %}
-    <li class="list-group-item"><a href="{{ post.url }}">{{ post.title}}</a>
+  {% for post in site.posts %}
+  <li class="list-group-item">
+    <a href="{{ post.url }}">{{ post.title}}</a>
     <span class="postDate">{{ post.date | date: "%b %-d, %Y" }}</span>
-    </li>
-{% endfor %}
+    {{ post.excerpt }}
+  </li>
+  {% endfor %}
 </ul>
